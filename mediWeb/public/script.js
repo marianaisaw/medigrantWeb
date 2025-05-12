@@ -15,15 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Your web app's Firebase configuration
-const firebaseConfig = {
-    apiKey: "AIzaSyDSvthNx1tDIxxio0FdhLDAEf7_OBnCwMA",
-    authDomain: "medigrants.firebaseapp.com",
-    databaseURL: "https://medigrants.firebaseio.com",
-    projectId: "medigrants",
-    storageBucket: "medigrants.firebasestorage.app",
-    messagingSenderId: "1009855688798",
-    appId: "1:1009855688798:web:2231100e8149b847a404cf"
-  };
+
   // Initialize Firebase
   const app = firebase.initializeApp(firebaseConfig);
   const db = firebase.firestore(app);
