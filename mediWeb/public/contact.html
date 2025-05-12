@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – MediGrant</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+  <header class="mg-contact-header">
+    <nav class="mg-navbar mg-container">
+      <div class="mg-nav-left">
+        <a href="index.html" class="mg-title">MediGrant</a>
+      </div>
+      <div class="mg-nav-right">
+        <a href="about.html" class="mg-nav-link">About</a>
+        <a href="index.html" class="mg-nav-link">Solutions</a>
+        <a href="contact.html" class="mg-btn mg-btn-primary mg-nav-btn">Book Demo</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="mg-contact-section">
+      <h2 class="mg-contact-title">Contact Us</h2>
+      <form class="mg-contact-form">
+        <div class="mg-form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="mg-form-group">
+          <label for="organization">Organization</label>
+          <input type="text" id="organization" name="organization" placeholder="Your Organization" required />
+        </div>
+        <div class="mg-form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@email.com" required />
+        </div>
+        <div class="mg-form-group">
+          <label for="intended-use">Intended Use</label>
+          <textarea id="intended-use" name="intended-use" placeholder="Tell us how you plan to use MediGrant!" required></textarea>
+        </div>
+        <button type="submit" class="mg-btn mg-btn-primary mg-contact-btn">Submit</button>
+      </form>
+    </section>
+  </main>
+  <footer class="mg-footer">
+    <div class="mg-container">
+      <p>&copy; 2025 MediGrant. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 

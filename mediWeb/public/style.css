@@ -1,0 +1,335 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #0A0E1A;
+  color: #FFFFFF;
+  line-height: 1.6;
+}
+
+.mg-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.mg-header {
+  padding: 40px 0 0 0;
+  text-align: center;
+}
+.mg-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #75B4FF 0%, #B5CCFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.mg-subtitle {
+  font-size: 1.2rem;
+  color: #D1D5DB;
+  margin-top: 8px;
+}
+
+/* Hero Section */
+.mg-hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 56px 0 40px 0;
+  gap: 40px;
+}
+.mg-hero-content {
+  flex: 1 1 350px;
+  min-width: 320px;
+}
+.mg-hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #FFFFFF;
+}
+.mg-hero-desc {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #D1D5DB;
+}
+.mg-hero-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 24px;
+}
+.mg-hero-list li {
+  margin-bottom: 8px;
+  padding-left: 1.2em;
+  position: relative;
+  color: #FFFFFF;
+}
+.mg-hero-list li::before {
+  content: '✔';
+  color: #6A6CFF;
+  position: absolute;
+  left: 0;
+}
+.mg-btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 24px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  font-size: 1rem;
+}
+.mg-btn-primary {
+  background: linear-gradient(90deg, #6A6CFF 60%, #8A8EFF 100%);
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 16px 0 #8A8EFF80;
+}
+.mg-btn-primary:hover {
+  background: linear-gradient(90deg, #8A8EFF 0%, #6A6CFF 100%);
+  box-shadow: 0 0 24px 0 #8A8EFFCC;
+}
+.mg-hero-image {
+  flex: 1 1 320px;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mg-image-placeholder {
+  max-width: 100%;
+  height: auto;
+  min-width: 120px;
+  min-height: 80px;
+  background: #13223E;
+  border: 2px dashed #6A6CFF;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888A8F;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+}
+
+/* Features Section */
+.mg-features {
+  padding: 48px 0 32px 0;
+}
+.mg-section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: #FFFFFF;
+  text-align: center;
+}
+.mg-features-grid {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mg-feature-card {
+  flex: 1 1 260px;
+  min-width: 240px;
+  background: #1B1F2E;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px 0 #13223E;
+  padding: 28px 22px;
+  margin-bottom: 16px;
+  text-align: left;
+  border-top: 4px solid #6A6CFF;
+}
+.mg-feature-card h4 {
+  margin: 0 0 10px 0;
+  color: #B5CCFF;
+  font-size: 1.15rem;
+}
+.mg-feature-card p {
+  color: #D1D5DB;
+  font-size: 1rem;
+}
+
+/* AI Section */
+.mg-ai-section {
+  padding: 48px 0 32px 0;
+}
+.mg-ai-grid {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.mg-ai-card {
+  flex: 1 1 220px;
+  min-width: 200px;
+  background: #1B1F2E;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px 0 #13223E;
+  padding: 24px 18px;
+  margin-bottom: 16px;
+  text-align: left;
+}
+.mg-ai-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #fff;
+  background: #6A6CFF;
+  box-shadow: 0 0 8px 0 #8A8EFF80;
+}
+.mg-ai-card h4 {
+  margin: 0 0 10px 0;
+  color: #B5CCFF;
+  font-size: 1.08rem;
+}
+.mg-ai-card ul {
+  padding-left: 1.2em;
+  margin: 0;
+  color: #D1D5DB;
+  font-size: 0.98rem;
+}
+.mg-ai-card ul li {
+  margin-bottom: 6px;
+}
+
+/* Info Section */
+.mg-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  padding: 48px 0 32px 0;
+}
+.mg-info-content {
+  flex: 2 1 340px;
+  min-width: 300px;
+}
+.mg-info-image {
+  flex: 1 1 260px;
+  min-width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CTA Section */
+.mg-cta {
+  text-align: center;
+  padding: 48px 0 32px 0;
+}
+
+/* Footer */
+.mg-footer {
+  background: #1B1F2E;
+  padding: 24px 0;
+  text-align: center;
+  color: #888A8F;
+  font-size: 0.98rem;
+  margin-top: 32px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .mg-hero, .mg-info {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .mg-features-grid, .mg-ai-grid {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
+@media (max-width: 600px) {
+  .mg-container {
+    padding: 0 8px;
+  }
+  .mg-title {
+    font-size: 2rem;
+  }
+  .mg-hero-title {
+    font-size: 1.3rem;
+  }
+  .mg-section-title {
+    font-size: 1.1rem;
+  }
+  .mg-image-placeholder {
+    min-width: 80px;
+    min-height: 60px;
+    font-size: 1rem;
+  }
+}
+
+/* Placeholder text color for input (if needed in future) */
+::placeholder {
+  color: #888A8F;
+  opacity: 1;
+}
+
+/* Navigation Bar */
+.mg-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  min-height: 64px;
+}
+.mg-nav-left {
+  display: flex;
+  align-items: center;
+}
+.mg-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.mg-nav-link {
+  color: #D1D5DB;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 16px;
+  transition: color 0.2s;
+}
+.mg-nav-link:hover {
+  color: #FFFFFF;
+}
+.mg-nav-link.active {
+  color: #6A6CFF;
+  position: relative;
+}
+.mg-nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #6A6CFF 0%, #8A8EFF 100%);
+  border-radius: 2px;
+}
+.mg-nav-btn {
+  margin-left: 8px;
+  font-size: 1rem;
+  padding: 10px 24px;
+}
+@media (max-width: 700px) {
+  .mg-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .mg-nav-right {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+}
+/* End Navigation Bar */
